@@ -749,7 +749,10 @@
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {94.118,94.118,4000,583.3}  // default steps per unit for Ultimaker
+// X Y - 200 steps / revolution motors
+//       1/16 microstep drivers
+//       40mm travel per revolution
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,583.3}  // default steps per unit for Ultimaker
 #define DEFAULT_MAX_FEEDRATE          {250, 250, 2, 22}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,5,1000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
